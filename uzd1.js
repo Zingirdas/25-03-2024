@@ -39,12 +39,13 @@ class Trupmena {
 
     //------- 7 --------//
     pridetiTrupmena(trupmena) {
-        const bendrVa = this.#x[2] * trupmena.x[2];
-        const naujSk = this.#x[1] * trupmena.x[2] + trupmena.x[1] * this.#x[2];
-        const naujSv = this.#x[0] + trupmena.x[0];
-        this.#x[0] = naujSv;
-        this.#x[1] = naujSk;
-        this.#x[2] = bendrVa;
+        this.prideti(naujSv, naujSk, bendrVa);
+        // const bendrVa = this.#x[2] * trupmena.x[2];
+        // const naujSk = this.#x[1] * trupmena.x[2] + trupmena.x[1] * this.#x[2];
+        // const naujSv = this.#x[0] + trupmena.x[0];
+        // this.#x[0] = naujSv;
+        // this.#x[1] = naujSk;
+        // this.#x[2] = bendrVa;
     }
 
     //------- 8 --------//
